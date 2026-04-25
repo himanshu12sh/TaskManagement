@@ -15,8 +15,10 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://task-management-iota-five-12.vercel.app/"
-  ]
+    "https://task-management-iota-five-12.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 app.use(express.json());
 
