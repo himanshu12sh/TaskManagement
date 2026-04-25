@@ -6,9 +6,9 @@ import authRoutes from "./routes/authRoutes.js";
 import projectRoutes from "./routes/projectRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 
+dotenv.config();
 const port = process.env.PORT || 5000;
 
-dotenv.config();
 connectDB();
 
 const app = express();
